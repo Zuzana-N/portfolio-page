@@ -14,3 +14,6 @@ This is code for my portfolio page, where I am presenting my skills and projects
 Stack: I used only vanilla HTML5, CSS3 and JavaScript, because I wanted to get really good knowledge of the basics of these languages, before I venture into advanced frameworks, libraries, preprocessors, etc.
 
 You can use this code in any way you want for personal non-commercial projects, just please credit me if you publish it publicly. For commercial purposes, you can use parts of the code, please let me know if you do and credit me. If you have any questions about the project or comments on the code itself, please let me know!
+
+## Odkaz/link
+[https://www.zuzana-n.cz]
