@@ -463,6 +463,11 @@ header {
 .shoptet {
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid var(--clr-accent-400);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
 }
 
 @media (max-width: 50em) {
