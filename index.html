@@ -1,340 +1,882 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Zuzana Náprstková">
-    <meta name="description" content="Portfolio Zuzany Náprstkové - front-end kodérky">
-    <meta name="robots" content="index,follow">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
-    <title>Zuzana Náprstková - kodérka</title>
-</head>
-<body>
-    <header class="primary-header">
-        <div class="container">
-            <a href="https://www.zuzana-n.cz" title="Domů">
-                <div class="anim-logo">
-                    <svg class="initial svg-logo">
-                        <rect rx="5" ry="5" x="1" y="3" width="38" height="5" />
-                        <rect rx="5" ry="5" x="1.5" y="15.5" width="52.5" height="5" class="rotated" />
-                        <rect rx="5" ry="5" x="1" y="38" width="38" height="5" />
-                    </svg>
-                    <svg class="transform svg-logo">
-                        <rect rx="5" ry="5" x="1" y="3" width="38" height="5" />
-                        <rect rx="5" ry="5" x="1.5" y="15.5" width="52.5" height="5" class="rotated" />
-                        <rect rx="5" ry="5" x="1" y="38" width="38" height="5" />
-                    </svg>
-                </div>
-            </a>
-            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                <svg class="svg-hamb" width="50" height="50">
-                    <rect class="bar bar-top" rx="5" ry="5" x="5" y="12" width="40" height="4"/>
-                    <rect class="bar bar-middle" rx="5" ry="5" x="5" y="22" width="40" height="4"/>
-                    <rect class="bar bar-bottom" rx="5" ry="5" x="5" y="32" width="40" height="4"/>
-                </svg>
-                <span class="visually-hidden">Menu</span>
-            </button>
-            <nav class="primary-nav">
-                <ul aria-label="Primary" role="list" class="nav-list" id="primary-nav">
-                    <li><a href="#coumim" class="serv-nav">Co umím</a></li>
-                    <li><a href="#mywork" class="work-nav">Moje práce</a></li>
-                    <li><a href="#contact" class="contact-nav">Kontakt</a></li>        
-                    <li><a href="#about" class="about-nav">O mně</a></li>
-                </ul>
-            </nav>
-            <a class="button btn-cta btn-cta-header" href="#contact">Začněme spolupráci</a>
-        </div>
-        <div class="up-btn"><a href="#home" title="Zpět nahoru">^</a></div>
-    </header>
-    <main>
-        <section class="padding-block-hero" id="home">
-            <div class="container flow">
-                <div class="even-columns">
-                    <div>
-                        <h1 class="fs-primary-heading fw-bold">Zuzana Náprstková – portfolio</h1>
-                        <p class="hero-p">Zdravím, tady Zuzka! Jako kodérka se zaměřením na front-end ráda upravím web vám nebo vašim klientům.</p>
-                        <a class="button btn-cta" href="#mywork">Koukněte na mojí práci</a>
-                    </div>
-                    <div class="photo">
-                        <img class="my-photo" src="/images/photo ctv 400.jpg" alt="Moje fotka. Ahoj!" width="270" height="270">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="padding-block-lrg" id="coumim">
-            <div class="container">
-                <div class="skills">
-                    <h2 class="fs-secondary-heading fw-bold">Stack a nástroje</h2>
-                    <div class="stack">
-                        <div class="tools">
-                            <p style="margin-bottom:10px;">Pracuji s těmito jazyky a nástroji. </p>
-                            <div class="tools-overview">
-                                <div class="my-tools">
-                                    <div class="tool" title="Logo HTML">
-                                        <svg xmlns="http://www.w3.org/2000/svg" alt="Logo HTML"class="tool-icon" aria-hidden="true" viewBox="0 0 384 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
-                                        <p>HTML5</p>
-                                    </div>
-                                    <div class="tool" title="Logo CSS">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="tool-icon" aria-hidden="true" alt="Logo CSS" viewBox="0 0 384 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
-                                        <p>CSS3</p>
-                                    </div>
-                                    <div class="tool" title="Logo JavaScript">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="tool-icon" aria-hidden="true" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
-                                        <p>JavaScript</p>
-                                    </div>
-                                    <div class="tool" title="Logo React">
-                                        <svg alt="Logo React"class="tool-icon" aria-hidden="true" viewBox="0 0 128 128"><g fill="#61DAFB"><circle cx="64" cy="64" r="11.4"></circle><path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"></path></g></svg>
-                                        <p>React</p>
-                                    </div>
-                                    <div class="tool" title="Logo SASS/SCSS">
-                                        <svg xmlns="http://www.w3.org/2000/svg" alt="Logo SASS/SCSS" class="tool-icon" aria-hidden="true" viewBox="0 0 640 640"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M301.84 378.92c-.3.6-.6 1.08 0 0zm249.13-87a131.16 131.16 0 0 0-58 13.5c-5.9-11.9-12-22.3-13-30.1-1.2-9.1-2.5-14.5-1.1-25.3s7.7-26.1 7.6-27.2-1.4-6.6-14.3-6.7-24 2.5-25.29 5.9a122.83 122.83 0 0 0-5.3 19.1c-2.3 11.7-25.79 53.5-39.09 75.3-4.4-8.5-8.1-16-8.9-22-1.2-9.1-2.5-14.5-1.1-25.3s7.7-26.1 7.6-27.2-1.4-6.6-14.29-6.7-24 2.5-25.3 5.9-2.7 11.4-5.3 19.1-33.89 77.3-42.08 95.4c-4.2 9.2-7.8 16.6-10.4 21.6-.4.8-.7 1.3-.9 1.7.3-.5.5-1 .5-.8-2.2 4.3-3.5 6.7-3.5 6.7v.1c-1.7 3.2-3.6 6.1-4.5 6.1-.6 0-1.9-8.4.3-19.9 4.7-24.2 15.8-61.8 15.7-63.1-.1-.7 2.1-7.2-7.3-10.7-9.1-3.3-12.4 2.2-13.2 2.2s-1.4 2-1.4 2 10.1-42.4-19.39-42.4c-18.4 0-44 20.2-56.58 38.5-7.9 4.3-25 13.6-43 23.5-6.9 3.8-14 7.7-20.7 11.4-.5-.5-.9-1-1.4-1.5-35.79-38.2-101.87-65.2-99.07-116.5 1-18.7 7.5-67.8 127.07-127.4 98-48.8 176.35-35.4 189.84-5.6 19.4 42.5-41.89 121.6-143.66 133-38.79 4.3-59.18-10.7-64.28-16.3-5.3-5.9-6.1-6.2-8.1-5.1-3.3 1.8-1.2 7 0 10.1 3 7.9 15.5 21.9 36.79 28.9 18.7 6.1 64.18 9.5 119.17-11.8 61.78-23.8 109.87-90.1 95.77-145.6C386.52 18.32 293-.18 204.57 31.22c-52.69 18.7-109.67 48.1-150.66 86.4-48.69 45.6-56.48 85.3-53.28 101.9 11.39 58.9 92.57 97.3 125.06 125.7-1.6.9-3.1 1.7-4.5 2.5-16.29 8.1-78.18 40.5-93.67 74.7-17.5 38.8 2.9 66.6 16.29 70.4 41.79 11.6 84.58-9.3 107.57-43.6s20.2-79.1 9.6-99.5c-.1-.3-.3-.5-.4-.8 4.2-2.5 8.5-5 12.8-7.5 8.29-4.9 16.39-9.4 23.49-13.3-4 10.8-6.9 23.8-8.4 42.6-1.8 22 7.3 50.5 19.1 61.7 5.2 4.9 11.49 5 15.39 5 13.8 0 20-11.4 26.89-25 8.5-16.6 16-35.9 16-35.9s-9.4 52.2 16.3 52.2c9.39 0 18.79-12.1 23-18.3v.1s.2-.4.7-1.2c1-1.5 1.5-2.4 1.5-2.4v-.3c3.8-6.5 12.1-21.4 24.59-46 16.2-31.8 31.69-71.5 31.69-71.5a201.24 201.24 0 0 0 6.2 25.8c2.8 9.5 8.7 19.9 13.4 30-3.8 5.2-6.1 8.2-6.1 8.2a.31.31 0 0 0 .1.2c-3 4-6.4 8.3-9.9 12.5-12.79 15.2-28 32.6-30 37.6-2.4 5.9-1.8 10.3 2.8 13.7 3.4 2.6 9.4 3 15.69 2.5 11.5-.8 19.6-3.6 23.5-5.4a82.2 82.2 0 0 0 20.19-10.6c12.5-9.2 20.1-22.4 19.4-39.8-.4-9.6-3.5-19.2-7.3-28.2 1.1-1.6 2.3-3.3 3.4-5C434.8 301.72 450.1 270 450.1 270a201.24 201.24 0 0 0 6.2 25.8c2.4 8.1 7.09 17 11.39 25.7-18.59 15.1-30.09 32.6-34.09 44.1-7.4 21.3-1.6 30.9 9.3 33.1 4.9 1 11.9-1.3 17.1-3.5a79.46 79.46 0 0 0 21.59-11.1c12.5-9.2 24.59-22.1 23.79-39.6-.3-7.9-2.5-15.8-5.4-23.4 15.7-6.6 36.09-10.2 62.09-7.2 55.68 6.5 66.58 41.3 64.48 55.8s-13.8 22.6-17.7 25-5.1 3.3-4.8 5.1c.5 2.6 2.3 2.5 5.6 1.9 4.6-.8 29.19-11.8 30.29-38.7 1.6-34-31.09-71.4-89-71.1zm-429.18 144.7c-18.39 20.1-44.19 27.7-55.28 21.3C54.61 451 59.31 421.42 82 400c13.8-13 31.59-25 43.39-32.4 2.7-1.6 6.6-4 11.4-6.9.8-.5 1.2-.7 1.2-.7.9-.6 1.9-1.1 2.9-1.7 8.29 30.4.3 57.2-19.1 78.3zm134.36-91.4c-6.4 15.7-19.89 55.7-28.09 53.6-7-1.8-11.3-32.3-1.4-62.3 5-15.1 15.6-33.1 21.9-40.1 10.09-11.3 21.19-14.9 23.79-10.4 3.5 5.9-12.2 49.4-16.2 59.2zm111 53c-2.7 1.4-5.2 2.3-6.4 1.6-.9-.5 1.1-2.4 1.1-2.4s13.9-14.9 19.4-21.7c3.2-4 6.9-8.7 10.89-13.9 0 .5.1 1 .1 1.6-.13 17.9-17.32 30-25.12 34.8zm85.58-19.5c-2-1.4-1.7-6.1 5-20.7 2.6-5.7 8.59-15.3 19-24.5a36.18 36.18 0 0 1 1.9 10.8c-.1 22.5-16.2 30.9-25.89 34.4z"/></svg>
-                                        <p style="font-size: 12.5px;">SASS/SCSS</p>
-                                    </div>
-                                    <div class="tool" title="Logo TypeScript">
-                                        <svg class="tool-icon" aria-hidden="true" alt="Logo TypeScript" viewBox="0 0 128 128">
-                                            <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path><path data-name="original" d="M1.5 63.91v62.5h125v-125H1.5zm100.73-5a15.56 15.56 0 017.82 4.5 20.58 20.58 0 013 4c0 .16-5.4 3.81-8.69 5.85-.12.08-.6-.44-1.13-1.23a7.09 7.09 0 00-5.87-3.53c-3.79-.26-6.23 1.73-6.21 5a4.58 4.58 0 00.54 2.34c.83 1.73 2.38 2.76 7.24 4.86 8.95 3.85 12.78 6.39 15.16 10 2.66 4 3.25 10.46 1.45 15.24-2 5.2-6.9 8.73-13.83 9.9a38.32 38.32 0 01-9.52-.1 23 23 0 01-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34 9.34 0 011.15-.73L82 101l3.59-2.08.75 1.11a16.78 16.78 0 004.74 4.54c4 2.1 9.46 1.81 12.16-.62a5.43 5.43 0 00.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48 16.48 0 01-3.43-6.25 25 25 0 01-.22-8c1.33-6.23 6-10.58 12.82-11.87a31.66 31.66 0 019.49.26zm-29.34 5.24v5.12H56.66v46.23H45.15V69.26H28.88v-5a49.19 49.19 0 01.12-5.17C29.08 59 39 59 51 59h21.83z"></path>
-                                        </svg>
-                                        <p>TypeScript</p>
-                                    </div>
-                                    <div class="tool" title="Logo GitHub">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="tool-icon" aria-hidden="true" alt="Logo GitHub" viewBox="0 0 496 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                                        <p>GitHub</p>
-                                    </div>
-                                    <div class="tool" title="Logo Git">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="tool-icon" aria-hidden="true" alt="Logo Git"viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-                                        <p>Git</p>
-                                    </div>
-                                    <div class="tool" title="Logo Wordpress">
-                                        <svg class="tool-icon" aria-hidden="true" alt="Logo Wordpress" viewBox="0 0 128 128">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M64.094 126.224c34.275-.052 62.021-27.933 62.021-62.325 0-33.833-27.618-61.697-60.613-62.286C30.85.995 1.894 29.113 1.885 63.21c-.01 35.079 27.612 63.064 62.209 63.014zM63.993 4.63c32.907-.011 59.126 26.725 59.116 60.28-.011 31.679-26.925 58.18-59.092 58.187-32.771.007-59.125-26.563-59.124-59.608.002-32.193 26.766-58.848 59.1-58.859zM39.157 35.896c.538 1.793-.968 2.417-2.569 2.542-1.685.13-3.369.257-5.325.406 6.456 19.234 12.815 38.183 19.325 57.573.464-.759.655-.973.739-1.223 3.574-10.682 7.168-21.357 10.651-32.069.318-.977.16-2.271-.188-3.275-1.843-5.32-4.051-10.524-5.667-15.908-1.105-3.686-2.571-6.071-6.928-5.644-.742.073-1.648-1.524-2.479-2.349 1.005-.6 2.003-1.704 3.017-1.719a849.593 849.593 0 0126.618.008c1.018.017 2.016 1.15 3.021 1.765-.88.804-1.639 2.01-2.668 2.321-1.651.498-3.482.404-5.458.58l19.349 57.56c2.931-9.736 5.658-18.676 8.31-27.639 2.366-8.001.956-15.473-3.322-22.52-1.286-2.119-2.866-4.175-3.595-6.486-.828-2.629-1.516-5.622-1.077-8.259.745-4.469 4.174-6.688 8.814-7.113C74.333.881 34.431 9.317 19.728 34.922c5.66-.261 11.064-.604 16.472-.678 1.022-.013 2.717.851 2.957 1.652zm10.117 77.971c-.118.345-.125.729-.218 1.302 10.943 3.034 21.675 2.815 32.659-.886l-16.78-45.96c-5.37 15.611-10.52 30.575-15.661 45.544zm-8.456-2.078l-25.281-69.35c-11.405 22.278-2.729 56.268 25.281 69.35zm76.428-44.562c.802-10.534-2.832-25.119-5.97-27.125-.35 3.875-.106 8.186-1.218 12.114-2.617 9.255-5.817 18.349-8.899 27.468-3.35 9.912-6.832 19.779-10.257 29.666 16.092-9.539 24.935-23.618 26.344-42.123z"></path>
-                                        </svg> 
-                                        <p>Wordpress</p>
-                                    </div>
-                                    <div class="tool" title="Logo Figma">
-                                        <svg class="tool-icon" aria-hidden="true" alt="Logo Figma" viewBox="0 0 128 138">
-                                            <path d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0"></path>
-                                        </svg> 
-                                        <p>Figma</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="shoptet">
-                            <p>Díky mým zkušenostem z provozování e-shopu na platformě <span class="fw-bold">Shoptet</span> vám můžu pomoci s nastavením a úpravami i tam.</p>
-                            <div class="shoptet-tools">  
-                                <div class="tool" title="Logo jQuery">
-                                    <svg viewBox="0 0 128 128" class="tool-icon" aria-hidden="true" alt="Logo jQuery">
-                                        <path d="M9.625 32.181C-1.404 48.032-.031 68.657 8.394 85.501c.2.404.41.801.617 1.198l.394.759.246.437.439.786c.262.461.53.92.804 1.379l.459.756c.304.491.615.976.933 1.46l.398.614c.439.655.888 1.309 1.352 1.951l.039.05.228.308c.401.553.814 1.099 1.232 1.639l.464.59c.373.469.752.935 1.138 1.399l.435.52a75.27 75.27 0 001.586 1.812l.033.033.061.068a80.44 80.44 0 001.612 1.699l.517.521c.423.426.853.845 1.287 1.262l.527.5c.58.547 1.166 1.083 1.764 1.607l.028.022.307.262c.527.456 1.063.909 1.603 1.353l.664.529c.441.354.887.702 1.336 1.044l.714.543c.496.365.995.724 1.499 1.075l.546.387.15.107c.478.329.967.646 1.456.963l.63.42c.75.474 1.51.943 2.279 1.396l.63.355c.565.326 1.134.646 1.71.959.312.168.632.327.946.488.407.213.811.429 1.225.636l.283.137.501.242c.641.306 1.287.607 1.94.897l.41.184a66.92 66.92 0 002.263.941l.551.217c.704.271 1.418.539 2.135.791l.268.093c.787.275 1.581.53 2.381.779l.575.172c.814.245 1.619.538 2.458.693 53.339 9.727 68.833-32.053 68.833-32.053-13.013 16.953-36.111 21.425-57.996 16.446-.829-.187-1.633-.446-2.442-.685l-.609-.185a72.498 72.498 0 01-2.352-.765l-.323-.117a72.245 72.245 0 01-2.074-.769l-.582-.229c-.752-.297-1.5-.607-2.239-.931l-.447-.198a92.857 92.857 0 01-1.889-.879l-.546-.262c-.491-.239-.977-.493-1.461-.743-.324-.171-.654-.332-.975-.51a58.591 58.591 0 01-1.751-.982l-.591-.33a81.221 81.221 0 01-2.28-1.397l-.615-.41a59.283 59.283 0 01-1.623-1.079l-.522-.367a89.287 89.287 0 01-1.534-1.109l-.679-.514a64.473 64.473 0 01-1.384-1.082l-.617-.495a82.693 82.693 0 01-1.724-1.453l-.189-.159a83.466 83.466 0 01-1.812-1.647l-.511-.491c-.441-.42-.875-.843-1.302-1.277l-.51-.509a70.541 70.541 0 01-1.598-1.69l-.079-.084a67.39 67.39 0 01-1.621-1.844l-.424-.504a70.602 70.602 0 01-1.167-1.442l-.427-.532a78.406 78.406 0 01-1.347-1.794c-12.15-16.574-16.516-39.432-6.805-58.204m25.629-2.434c-7.977 11.478-7.543 26.844-1.321 38.983a50.581 50.581 0 003.528 5.889c1.195 1.713 2.52 3.751 4.106 5.127a48.111 48.111 0 001.79 1.858l.472.465a51.69 51.69 0 001.828 1.698l.074.064.018.018a55.268 55.268 0 002.135 1.767l.485.378a54.08 54.08 0 002.233 1.631l.065.049c.336.232.678.448 1.019.672l.483.319c.544.349 1.095.689 1.655 1.015l.235.136c.483.278.972.552 1.463.818l.521.271c.339.177.678.358 1.023.53l.155.07c.703.346 1.412.68 2.136.995l.472.194c.579.246 1.164.486 1.75.71l.75.275c.533.198 1.068.378 1.607.559l.727.233c.767.238 1.525.539 2.324.672 41.183 6.823 50.691-24.886 50.691-24.886-8.57 12.343-25.168 18.233-42.879 13.635a50.376 50.376 0 01-2.333-.674l-.701-.227a45.423 45.423 0 01-1.631-.562l-.736-.274a56.418 56.418 0 01-1.756-.708l-.473-.2a47.728 47.728 0 01-2.148-.999c-.363-.177-.72-.364-1.078-.548l-.622-.32a44.502 44.502 0 01-1.363-.77l-.326-.185a47.844 47.844 0 01-1.651-1.008l-.498-.332a61.759 61.759 0 01-1.069-.707 57.456 57.456 0 01-2.226-1.628l-.501-.395c-7.752-6.12-13.898-14.486-16.819-23.971-3.062-9.836-2.402-20.878 2.903-29.84m22.278-.775c-4.702 6.92-5.164 15.514-1.901 23.156 3.441 8.113 10.491 14.476 18.72 17.495.339.125.679.237 1.022.354l.451.143c.485.152.966.329 1.467.424 22.74 4.394 28.908-11.669 30.549-14.034-5.402 7.779-14.482 9.646-25.623 6.942-.88-.213-1.847-.531-2.695-.832a33.242 33.242 0 01-3.201-1.329 33.215 33.215 0 01-5.612-3.424c-9.969-7.565-16.162-21.994-9.657-33.745"></path>
-                                    </svg> 
-                                    <p>jQuery</p>
-                                </div>
-                                <div class="tool" title="Logo CSS">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="tool-icon" aria-hidden="true" alt="Logo CSS" viewBox="0 0 384 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
-                                    <p>CSS</p>
-                                </div>
-                                <div class="tool" title="Znak nastavení">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="tool-icon" aria-hidden="true" alt="Znak nastavení" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z"/></svg>
-                                    <p>Nastavení</p>
-                                </div>
-                            </div> 
-                        </div>  
-                    </div>
-                    <div class="bullet-points">
-                        <h2 class="fs-secondary-heading fw-bold">Co pro vás tedy můžu udělat?</h2>
-                        <p>Ať už vám ikonky nástrojů nic neříkají, nebo naopak s nimi také pracujete, nabízím tyto možnosti spolupráce:</p>
-                        <ul class="numbered-items" role="list">
-                            <li><h3 class="fs-600 fw-bold numbered-item">Úpravy vašeho webu nebo e-shopu</h3>
-                            <p>Vždy je třeba něco zlepšovat, že?  Posunout sekci, změnit barvy, skrýt nadpis – vyřešíme to, co chcete upravit.</p></li>
-                            <li><h3 class="fs-600 fw-bold numbered-item">Vytvoření jednoduché stránky </h3>
-                            <p>Potřebujete jednoduchou stránku, jako tato? Ať už na ní chcete ukázat vaši tvorbu, nebo potřebujete informační stránku pro váš podnik, vytvoříme místo, kde se můžete krásně prezentovat.</p></li>
-                            <li><h3 class="fs-600 fw-bold numbered-item">Stanu se členem vašeho týmu </h3>
-                            <p>Hledáte někoho, kdo vám bude pomáhat s vytvářením nebo úpravami webů pro vaše zákazníky? Jsem otevřená krátkodobé i dlouhodobé spolupráci v oblasti vývoje webů.</p></li>
-                        </ul>
-                        <br>
-                        <p>Pokud něco takového hledáte, můžete mě <a href="#contact">kontaktovat</a> anebo se podívat na to, <a href="#mywork">co jsem vytvořila.</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="mywork" class="padding-block-lrg">
-            <h2 class="fs-secondary-heading fw-bold container">Moje práce</h2>
-            <p class="overview container">Níže najdete moji práci na reálných projektech, ale i ukázku mých schopností na vlastních projektech.</p>
-            <div class="overview container">
-                <div class="overview-card">
-                    <div class="card-desc">
-                        <h3 class="fs-600 fw-bold">Sluneční soustava - kvíz</h3>
-                        <p>Prohlédněte si naši krásnou sluneční soustavu a ověřte své znalosti pomocí kvízu! Vytvořeno pomocí React, TypeScript, API a SCSS. </p>
-                        <div class="buttons">
-                            <a class="button btn-secondary" href="https://www.zuzana-n.cz/solar-system/" target="_blank">Vyzkoušet</a>
-                            <a class="button btn-secondary" href="https://github.com/Zuzana-N/solar-system" target="_blank">Kód na GitHubu</a>
-                        </div>
-                    </div>
-                    <div class="img-card">
-                            <img src="/images/solar system.webp" alt="Náhled na časovač">
-                    </div>
-                </div>
-                <div class="overview-card">
-                    <div class="card-desc">
-                        <h3 class="fs-600 fw-bold">Časovač - součást online kurzu Front End Development Libraries</h3>
-                        <p>Časovač, který vám například umožní využít pomodoro metodu. V políčku Session Length vyberte počet minut, jak dlouho chcete pracovat, v Break Length jak dlouhá má být přestávka. Vytvořeno pomocí React a SCSS. </p>
-                        <div class="buttons">
-                            <a class="button btn-secondary" href="https://www.zuzana-n.cz/FCC-timer/" target="_blank">Vyzkoušet</a>
-                            <a class="button btn-secondary" href="https://github.com/Zuzana-N/fcc_timer" target="_blank">Kód na GitHubu</a>
-                        </div>
-                    </div>
-                    <div class="img-card">
-                            <img src="/images/timer.webp" alt="Náhled na časovač">
-                    </div>
-                </div>
-                <div class="overview-card">
-                    <div class="card-desc">
-                        <h3 class="fs-600 fw-bold">Hra kámen, nůžky, papír</h3>
-                        <p>Moje verze oblíbené hry, postavená v Reactu a pomocí SCSS. Zvolte jednu ze třech klasických možností a uvidíte, jestli zvítězíte. V horní části stránky můžete sledovat, jak si vedete.</p>
-                        <div class="buttons">
-                            <a class="button btn-secondary" href="https://www.zuzana-n.cz/rps/" target="_blank">Vyzkoušet</a>
-                            <a class="button btn-secondary" href="https://github.com/Zuzana-N/RPS-game" target="_blank">Kód na GitHubu</a>
-                        </div>
-                    </div>
-                    <div class="img-card">
-                            <img src="/images/rps.webp" alt="Náhled na hru">
-                    </div>
-                </div>
-                <div class="overview-card">
-                    <div class="card-desc">
-                        <h3 class="fs-600 fw-bold">Propočet ceny platební brány</h3>
-                        <p>Tuto kalkulačku jsem vytvořila, aby pomohla e-shopařům a dalším podnikatelům pochopit, 
-                            kolik je bude stát platební brána nebo terminál. Můžou si tam porovnat nabídky od několika poskytovatelů najednou. Je vytvořena pomocí HTML, CSS a JavaScript (vanilla).</p>
-                        <div class="buttons">
-                            <a class="button btn-secondary" href="https://www.zuzana-n.cz/kalkulacka-brany/">Vyzkoušet</a>
-                            <a class="button btn-secondary" href="https://github.com/Zuzana-N/cost-calculator" target="_blank">Kód na GitHubu</a>
-                        </div>
-                    </div>
-                    <div class="img-card">
-                            <img src="/images/kalkulačka.webp" alt="Náhled na propočet">
-                    </div>
-                </div>
-                <div class="overview-card">
-                    <div class="card-desc">
-                        <h3 class="fs-600 fw-bold">Úpravy na mém e-shopu decoyana.cz</h3>
-                        <p>E-shop běží na platformě Shoptet. Já jsem si na něm pomocí kódu upravila například barvy patičky, cookies lištu, 
-                            a přepsala text třeba tlačítka objednávky. </p>
-                        <div class="buttons">
-                            <a class="button btn-secondary" href="https://www.decoyana.cz" target="_blank">Podívat se</a>
-                            <a class="button btn-secondary" href="https://www.zuzana-n.cz/upravy-eshopu/">Změny podrobně</a>
-                        </div> 
-                    </div>
-                    <div class="img-card">
-                        <img src="/images/decoyana.webp" alt="Ukázka mého e-shopu">
-                    </div>
-                </div>
-                <div class="overview-card">
-                    <div class="card-desc">
-                        <h3 class="fs-600 fw-bold">Vzhled a úprava Wordpress blogu moje-helina.cz</h3>
-                        <p style="margin-bottom: 0em">Blog jsem upravila jak v administraci Wordpressu, tak v CSS editoru a menší změny i v PHP souborech šablony. Mezi úpravy patří třeba:
-přidání favicony, nastavení cookies lišty podle současných pravidel, změna šablony a pomocí CSS úprava hlavičky pro mobily a schování různých prvků. Všechny změny a obrázky před a po vám ráda dodám na vyžádání.</p>
-                        
-                    </div>
-                    <div class="img-card">
-                        <img src="/images/moje-helina.webp" alt="Ukázka blogu moje-helina.cz">
-                    </div>
-                </div>
-                <div class="overview-card">
-                    <div class="card-desc">
-                        <h3 class="fs-600 fw-bold">Tato portfolio stránka</h3>
-                        <p>Tuto stránku jsem vytvořila za použití pouze HTML5, CSS3 a JavaScriptu (vanilla). Není postavena na žádném redakčním systému. 
-                            Pokud máte nastavený výchozí tmavý režim, měla by se vám zobrazit s opačnými barvami - černá na pozadí, bílé písmo.
-                        </p>
-                        <div class="buttons">
-                            <a class="button btn-secondary" href="https://github.com/Zuzana-N/portfolio-page" target="_blank">Kód na GitHubu</a>
-                        </div>
-                    </div>
-                    <div class="img-card">
-                        <img src="/images/portfolio2.webp" alt="Náhled na moji portfolio stránku">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="padding-block-lrg bg-prim-400 white-text">
-            <div class="contact">
-                <h2 class="fs-secondary-heading fw-bold">Kontakt</h2>
-                <p class="contact-p">Máte zájem o úpravu vaší stránky, nebo hledáte člena do týmu? Napište e-mail nebo zavolejte a já se vám ozvu co nejdříve zpět!</p>
-                <div class="flex">
-                    <div class="contact-info">
-                        <a href="mailto:info@zuzana-n.cz"><img src="https://www.zuzana-n.cz/images/mail icon.svg" alt="E-mailová adresa" class="filter-light" title="Napsat e-mail" width="50px" height="50px"></a>
-                        <div class="contact-row"><a title="Napsat e-mail" href="mailto:info@zuzana-n.cz">info@zuzana-n.cz</a><span title="Zkopírovat e-mail"><svg xmlns="http://www.w3.org/2000/svg" title="Zkopírovat" class="contact-icon" id="e-mail-icon" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"/></svg></span></div>
-                        <p></p>
-                        <a href="tel:+420604828515"><img src="https://www.zuzana-n.cz/images/call icon.svg" alt="Telefonní číslo" class="filter-light" title="Zavolat" width="50px" height="50px"></a>
-                        <div class="contact-row"><a title="Zavolat" href="tel:+420604828515">+420 604 828 515</a><span title="Zkopírovat tel. číslo"><svg xmlns="http://www.w3.org/2000/svg" title="Zkopírovat" class="contact-icon" id="phone-icon" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"/></svg></span></div>
-                    </div>
-                    <div class="informace-o-mne">
-                        <h3 class="udaje fw-bold">Údaje</h3>
-                        <p>Ing. Zuzana Náprstková</p>
-                        <p>IČ: 14041022</p>
-                        <p>Kladenská 409/9</p>
-                        <p>Praha 6 160 00</p>
-                        <p>Nejsem plátce DPH.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="about" class="padding-block-lrg">
-            <div class="container">
-                <div class="even-columns">
-                    <div>
-                        <h2 class="fs-secondary-heading fw-bold">O mně</h2>
-                        <p>Když jsem spustila svůj vlastní e-shop, znala jsem pouze základy HTML a CSS a počítala jsem s tím, že se kódování vyhnu, 
-                        jelikož jsem využila e-commerce platformu, kde už je vše připravené. Ale zjistila jsem, že ačkoli platforma nabízí solidní řešení, 
-                        kódování se úplně nevyhnu, už jen kvůli doplnění vizuální identity značky.</p>
-                        <br>
-                        <p>Ukázalo se ale, že mě kódování a úpravy webu dost baví, tak jsem se zdokonalila v HTML a CSS a začala se učit programovací 
-                        jazyk JavaScript, abych mohla pracovat jako front-end vývojářka, a mohla tak sobě i ostatním upravovat weby, 
-                        aby s nimi mohli co nejlépe oslovit své návštěvníky.</p>
-                        <a class="button btn-secondary" href="https://www.linkedin.com/in/zuzana-naprstkova/" target="_blank">Více o mně na mém LinkedIn profilu</a>
-                    </div>
-                    <div class="photo-bottom">
-                        <img class="my-photo-lg" src="/images/fotka se mnou 500.jpg" alt="Další fotka se mnou." width="400">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="bg-prim-400">
-        <div class="sm-ctr">
-            <a href="https://www.zuzana-n.cz/#home" title="Domů">
-                <div class="anim-logo">
-                    <svg class="initial svg-logo logo-light">
-                        <rect rx="5" ry="5" x="1" y="3" width="38" height="5" />
-                        <rect rx="5" ry="5" x="1.5" y="15.5" width="52.5" height="5" class="rotated" />
-                        <rect rx="5" ry="5" x="1" y="38" width="38" height="5" />
-                    </svg>
-                    <svg class="transform svg-logo logo-light">
-                        <rect rx="5" ry="5" x="1" y="3" width="38" height="5" />
-                        <rect rx="5" ry="5" x="1.5" y="15.5" width="52.5" height="5" class="rotated" />
-                        <rect rx="5" ry="5" x="1" y="38" width="38" height="5" />
-                    </svg>
-                </div>
-            </a>
-            <div>
-                <nav class="footer-nav">
-                    <ul aria-label="footer" role="list">
-                        <li><a href="#coumim">Co umím</a></li>
-                        <li><a href="#mywork">Moje práce</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
-                        <li><a href="#about">O mně</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>    
-        <div class="copyright">
-            <p>Copyright 2023, Zuzana Náprstková. Všechna práva vyhrazena.</p>
-            <p>Vaše data nesbírám. Tyto stránky využívají pouze technické cookies, ke kterým nepotřebuji váš souhlas.</p>
-        </div>
-    </footer>
-    <script src="index.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Zuzana Náprstková" />
+		<meta
+			name="description"
+			content="Portfolio Zuzany Náprstkové - front-end kodérky"
+		/>
+		<meta name="robots" content="index,follow" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+		/>
+		<title>Zuzana Náprstková - kodérka</title>
+	</head>
+	<body>
+		<header class="primary-header">
+			<div class="container">
+				<a href="https://www.zuzana-n.cz" title="Domů">
+					<div class="anim-logo">
+						<svg class="initial svg-logo">
+							<rect rx="5" ry="5" x="1" y="3" width="38" height="5" />
+							<rect
+								rx="5"
+								ry="5"
+								x="1.5"
+								y="15.5"
+								width="52.5"
+								height="5"
+								class="rotated"
+							/>
+							<rect rx="5" ry="5" x="1" y="38" width="38" height="5" />
+						</svg>
+						<svg class="transform svg-logo">
+							<rect rx="5" ry="5" x="1" y="3" width="38" height="5" />
+							<rect
+								rx="5"
+								ry="5"
+								x="1.5"
+								y="15.5"
+								width="52.5"
+								height="5"
+								class="rotated"
+							/>
+							<rect rx="5" ry="5" x="1" y="38" width="38" height="5" />
+						</svg>
+					</div>
+				</a>
+				<button
+					class="mobile-nav-toggle"
+					aria-controls="primary-navigation"
+					aria-expanded="false"
+				>
+					<svg class="svg-hamb" width="50" height="50">
+						<rect
+							class="bar bar-top"
+							rx="5"
+							ry="5"
+							x="5"
+							y="12"
+							width="40"
+							height="4"
+						/>
+						<rect
+							class="bar bar-middle"
+							rx="5"
+							ry="5"
+							x="5"
+							y="22"
+							width="40"
+							height="4"
+						/>
+						<rect
+							class="bar bar-bottom"
+							rx="5"
+							ry="5"
+							x="5"
+							y="32"
+							width="40"
+							height="4"
+						/>
+					</svg>
+					<span class="visually-hidden">Menu</span>
+				</button>
+				<nav class="primary-nav">
+					<ul
+						aria-label="Primary"
+						role="list"
+						class="nav-list"
+						id="primary-nav"
+					>
+						<li><a href="#coumim" class="serv-nav">Co umím</a></li>
+						<li><a href="#mywork" class="work-nav">Moje práce</a></li>
+						<li><a href="#contact" class="contact-nav">Kontakt</a></li>
+						<li><a href="#about" class="about-nav">O mně</a></li>
+					</ul>
+				</nav>
+				<a class="button btn-cta btn-cta-header" href="#contact"
+					>Začněme spolupráci</a
+				>
+			</div>
+			<div class="up-btn"><a href="#home" title="Zpět nahoru">^</a></div>
+		</header>
+		<main>
+			<section class="padding-block-hero" id="home">
+				<div class="container flow">
+					<div class="even-columns">
+						<div>
+							<h1 class="fs-primary-heading fw-bold">
+								Zuzana Náprstková – portfolio
+							</h1>
+							<p class="hero-p">
+								Zdravím, tady Zuzka! Jako kodérka se zaměřením na front-end ráda
+								upravím web vám nebo vašim klientům.
+							</p>
+							<a class="button btn-cta" href="#mywork"
+								>Koukněte na mojí práci</a
+							>
+						</div>
+						<div class="photo">
+							<img
+								class="my-photo"
+								src="/images/photo_self.webp"
+								alt="Zuzana Náprstková"
+								width="270"
+								height="270"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="padding-block-lrg" id="coumim">
+				<div class="container">
+					<div class="skills">
+						<h2 class="fs-secondary-heading fw-bold">Stack</h2>
+						<div class="stack">
+							<div class="tools">
+								<div class="tools-overview">
+									<div class="my-tools main-tools">
+										<div class="tool" title="HTML">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												alt=""
+												class="tool-icon"
+												aria-hidden="true"
+												viewBox="0 0 384 512"
+											>
+												<!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+												<path
+													d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"
+												/>
+											</svg>
+											<p>HTML5</p>
+										</div>
+										<div class="tool" title="CSS">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												class="tool-icon"
+												aria-hidden="true"
+												alt=""
+												viewBox="0 0 384 512"
+											>
+												<!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+												<path
+													d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"
+												/>
+											</svg>
+											<p>CSS3</p>
+										</div>
+										<div class="tool" title="JavaScript">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												class="tool-icon"
+												aria-hidden="true"
+												viewBox="0 0 448 512"
+											>
+												<!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+												<path
+													d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
+												/>
+											</svg>
+											<p>JavaScript</p>
+										</div>
+										<div class="tool" title="React">
+											<svg
+												alt=""
+												class="tool-icon"
+												aria-hidden="true"
+												viewBox="0 0 128 128"
+											>
+												<g fill="#61DAFB">
+													<circle cx="64" cy="64" r="11.4"></circle>
+													<path
+														d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"
+													></path>
+												</g>
+											</svg>
+											<p>React</p>
+										</div>
+										<div class="tool" title="VueJS">
+											<svg
+												alt=""
+												class="tool-icon"
+												aria-hidden="true"
+												viewBox="0 0 128 128"
+											>
+												<path
+													d="M0 8.934l49.854.158 14.3 24.415 14.3-24.415 49.548-.158-63.835 110.134zm126.987.637l-24.37.021-38.473 66.053L25.692 9.592l-24.75-.02 63.212 107.89z"
+												></path>
+											</svg>
+											<p>VueJS</p>
+										</div>
+										<div class="tool" title="SASS/SCSS">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												alt=""
+												class="tool-icon"
+												aria-hidden="true"
+												viewBox="0 0 640 640"
+											>
+												<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+												<path
+													d="M301.84 378.92c-.3.6-.6 1.08 0 0zm249.13-87a131.16 131.16 0 0 0-58 13.5c-5.9-11.9-12-22.3-13-30.1-1.2-9.1-2.5-14.5-1.1-25.3s7.7-26.1 7.6-27.2-1.4-6.6-14.3-6.7-24 2.5-25.29 5.9a122.83 122.83 0 0 0-5.3 19.1c-2.3 11.7-25.79 53.5-39.09 75.3-4.4-8.5-8.1-16-8.9-22-1.2-9.1-2.5-14.5-1.1-25.3s7.7-26.1 7.6-27.2-1.4-6.6-14.29-6.7-24 2.5-25.3 5.9-2.7 11.4-5.3 19.1-33.89 77.3-42.08 95.4c-4.2 9.2-7.8 16.6-10.4 21.6-.4.8-.7 1.3-.9 1.7.3-.5.5-1 .5-.8-2.2 4.3-3.5 6.7-3.5 6.7v.1c-1.7 3.2-3.6 6.1-4.5 6.1-.6 0-1.9-8.4.3-19.9 4.7-24.2 15.8-61.8 15.7-63.1-.1-.7 2.1-7.2-7.3-10.7-9.1-3.3-12.4 2.2-13.2 2.2s-1.4 2-1.4 2 10.1-42.4-19.39-42.4c-18.4 0-44 20.2-56.58 38.5-7.9 4.3-25 13.6-43 23.5-6.9 3.8-14 7.7-20.7 11.4-.5-.5-.9-1-1.4-1.5-35.79-38.2-101.87-65.2-99.07-116.5 1-18.7 7.5-67.8 127.07-127.4 98-48.8 176.35-35.4 189.84-5.6 19.4 42.5-41.89 121.6-143.66 133-38.79 4.3-59.18-10.7-64.28-16.3-5.3-5.9-6.1-6.2-8.1-5.1-3.3 1.8-1.2 7 0 10.1 3 7.9 15.5 21.9 36.79 28.9 18.7 6.1 64.18 9.5 119.17-11.8 61.78-23.8 109.87-90.1 95.77-145.6C386.52 18.32 293-.18 204.57 31.22c-52.69 18.7-109.67 48.1-150.66 86.4-48.69 45.6-56.48 85.3-53.28 101.9 11.39 58.9 92.57 97.3 125.06 125.7-1.6.9-3.1 1.7-4.5 2.5-16.29 8.1-78.18 40.5-93.67 74.7-17.5 38.8 2.9 66.6 16.29 70.4 41.79 11.6 84.58-9.3 107.57-43.6s20.2-79.1 9.6-99.5c-.1-.3-.3-.5-.4-.8 4.2-2.5 8.5-5 12.8-7.5 8.29-4.9 16.39-9.4 23.49-13.3-4 10.8-6.9 23.8-8.4 42.6-1.8 22 7.3 50.5 19.1 61.7 5.2 4.9 11.49 5 15.39 5 13.8 0 20-11.4 26.89-25 8.5-16.6 16-35.9 16-35.9s-9.4 52.2 16.3 52.2c9.39 0 18.79-12.1 23-18.3v.1s.2-.4.7-1.2c1-1.5 1.5-2.4 1.5-2.4v-.3c3.8-6.5 12.1-21.4 24.59-46 16.2-31.8 31.69-71.5 31.69-71.5a201.24 201.24 0 0 0 6.2 25.8c2.8 9.5 8.7 19.9 13.4 30-3.8 5.2-6.1 8.2-6.1 8.2a.31.31 0 0 0 .1.2c-3 4-6.4 8.3-9.9 12.5-12.79 15.2-28 32.6-30 37.6-2.4 5.9-1.8 10.3 2.8 13.7 3.4 2.6 9.4 3 15.69 2.5 11.5-.8 19.6-3.6 23.5-5.4a82.2 82.2 0 0 0 20.19-10.6c12.5-9.2 20.1-22.4 19.4-39.8-.4-9.6-3.5-19.2-7.3-28.2 1.1-1.6 2.3-3.3 3.4-5C434.8 301.72 450.1 270 450.1 270a201.24 201.24 0 0 0 6.2 25.8c2.4 8.1 7.09 17 11.39 25.7-18.59 15.1-30.09 32.6-34.09 44.1-7.4 21.3-1.6 30.9 9.3 33.1 4.9 1 11.9-1.3 17.1-3.5a79.46 79.46 0 0 0 21.59-11.1c12.5-9.2 24.59-22.1 23.79-39.6-.3-7.9-2.5-15.8-5.4-23.4 15.7-6.6 36.09-10.2 62.09-7.2 55.68 6.5 66.58 41.3 64.48 55.8s-13.8 22.6-17.7 25-5.1 3.3-4.8 5.1c.5 2.6 2.3 2.5 5.6 1.9 4.6-.8 29.19-11.8 30.29-38.7 1.6-34-31.09-71.4-89-71.1zm-429.18 144.7c-18.39 20.1-44.19 27.7-55.28 21.3C54.61 451 59.31 421.42 82 400c13.8-13 31.59-25 43.39-32.4 2.7-1.6 6.6-4 11.4-6.9.8-.5 1.2-.7 1.2-.7.9-.6 1.9-1.1 2.9-1.7 8.29 30.4.3 57.2-19.1 78.3zm134.36-91.4c-6.4 15.7-19.89 55.7-28.09 53.6-7-1.8-11.3-32.3-1.4-62.3 5-15.1 15.6-33.1 21.9-40.1 10.09-11.3 21.19-14.9 23.79-10.4 3.5 5.9-12.2 49.4-16.2 59.2zm111 53c-2.7 1.4-5.2 2.3-6.4 1.6-.9-.5 1.1-2.4 1.1-2.4s13.9-14.9 19.4-21.7c3.2-4 6.9-8.7 10.89-13.9 0 .5.1 1 .1 1.6-.13 17.9-17.32 30-25.12 34.8zm85.58-19.5c-2-1.4-1.7-6.1 5-20.7 2.6-5.7 8.59-15.3 19-24.5a36.18 36.18 0 0 1 1.9 10.8c-.1 22.5-16.2 30.9-25.89 34.4z"
+												/>
+											</svg>
+											<p style="font-size: 12.5px">SASS/SCSS</p>
+										</div>
+									</div>
+								</div>
+								<h3 class="fw-bold">V práci mi pomáhají tyto nástroje</h3>
+								<div class="tools-overview">
+									<div class="my-tools">
+										<div class="tool" title="GitHub">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												class="tool-icon"
+												aria-hidden="true"
+												alt=""
+												viewBox="0 0 496 512"
+											>
+												<!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+												<path
+													d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+												></path>
+											</svg>
+											<p>GitHub</p>
+										</div>
+										<div class="tool" title="Git">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												class="tool-icon"
+												aria-hidden="true"
+												alt=""
+												viewBox="0 0 448 512"
+											>
+												<!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+												<path
+													d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"
+												></path>
+											</svg>
+											<p>Git</p>
+										</div>
+										<div class="tool" title="VS Code">
+											<svg
+												viewBox="0 0 128 128"
+												class="tool-icon"
+												alt=""
+												aria-hidden="true"
+											>
+												<path
+													d="M94.145.348a8 8 0 0 0-.563.072 8 8 0 0 0-.928.027 8 8 0 0 0-.982.215 8 8 0 0 0-.553.072 8 8 0 0 0-.822.387 8 8 0 0 0-.486.229A8 8 0 0 0 88 2.668L45.486 49.674l-24.82-20.34-2.172-1.865a5.333 5.333 0 0 0-.826-.463 5.333 5.333 0 0 0-.535-.3 5.333 5.333 0 0 0-.604-.227 5.333 5.333 0 0 0-.644-.15 5.333 5.333 0 0 0-.504-.017 5.333 5.333 0 0 0-.51-.074 5.333 5.333 0 0 0-.266.06 5.333 5.333 0 0 0-.214-.003 5.333 5.333 0 0 0-.227.06 5.333 5.333 0 0 0-.484.006 3.4 3.4 0 0 0-.707.24l-9.694 4.067a5.333 5.333 0 0 0-1.466.95 5.333 5.333 0 0 0-.215.177 5.333 5.333 0 0 0-.23.312 5.333 5.333 0 0 0-.64.88 5.333 5.333 0 0 0-.267.476 5.333 5.333 0 0 0-.09.275 5.333 5.333 0 0 0-.232.908 5.333 5.333 0 0 0-.139.516v57.68a5.333 5.333 0 0 0 .139.512 5.333 5.333 0 0 0 .232.914 5.333 5.333 0 0 0 .09.271 5.333 5.333 0 0 0 .268.477 5.333 5.333 0 0 0 .638.879 5.333 5.333 0 0 0 .23.312 5.333 5.333 0 0 0 .216.178 5.333 5.333 0 0 0 1.466.949l9.694 4.066a5.333 5.333 0 0 0 1.716.37 5.333 5.333 0 0 0 .51-.01 5.333 5.333 0 0 0 1.272-.198 5.333 5.333 0 0 0 .51-.154 5.333 5.333 0 0 0 1.513-.873l2.172-1.867 24.82-20.34L88 125.334a8 8 0 0 0 1.902 1.387 8 8 0 0 0 .604.23 8 8 0 0 0 .006.002 8 8 0 0 0 1.342.516 8 8 0 0 0 .242.013 8 8 0 0 0 1.558.088 8 8 0 0 0 .99.014 8 8 0 0 0 2.45-.703l26.373-12.68a8 8 0 0 0 .572-.306 8 8 0 0 0 .17-.106 8 8 0 0 0 .383-.25 8 8 0 0 0 .181-.135 8 8 0 0 0 .33-.258 8 8 0 0 0 .204-.173 8 8 0 0 0 .277-.26 8 8 0 0 0 .19-.19 8 8 0 0 0 .283-.314 8 8 0 0 0 .144-.166 8 8 0 0 0 .266-.352 8 8 0 0 0 .142-.193 8 8 0 0 0 .33-.53 8 8 0 0 0 .09-.17 8 8 0 0 0 .2-.386 8 8 0 0 0 .113-.256 8 8 0 0 0 .152-.379 8 8 0 0 0 .076-.215 8 8 0 0 0 .116-.367 8 8 0 0 0 .082-.304 8 8 0 0 0 .072-.342 8 8 0 0 0 .053-.274 8 8 0 0 0 .056-.431 8 8 0 0 0 .022-.18 8 8 0 0 0 .002-.023 8 8 0 0 0 .027-.653V21.027a8 8 0 0 0 0-.011 8 8 0 0 0-.027-.655 8 8 0 0 0-.018-.158 8 8 0 0 0-.066-.508 8 8 0 0 0-.034-.17 8 8 0 0 0-.095-.443 8 8 0 0 0-.073-.268 8 8 0 0 0-.103-.33 8 8 0 0 0-.102-.295 8 8 0 0 0-.142-.345 8 8 0 0 0-.1-.233 8 8 0 0 0-.209-.404 8 8 0 0 0-.103-.195 8 8 0 0 0-.332-.528 8 8 0 0 0-.106-.14 8 8 0 0 0-.277-.37 8 8 0 0 0-.188-.216 8 8 0 0 0-.246-.274 8 8 0 0 0-.193-.193 8 8 0 0 0-.28-.262 8 8 0 0 0-.202-.174 8 8 0 0 0-.33-.257 8 8 0 0 0-.182-.135 8 8 0 0 0-.383-.25 8 8 0 0 0-.17-.106 8 8 0 0 0-.572-.306L97.094 1.12A8 8 0 0 0 94.75.416a8 8 0 0 0-.342.002 8 8 0 0 0-.263-.07zM96 36.908v54.186L62.947 64.002 96 36.908zm-80 8.82 16.527 18.274L16 82.275V45.73z"
+												></path>
+											</svg>
+
+											<p>VS Code</p>
+										</div>
+										<div class="tool" title="Logo Figma">
+											<svg
+												class="tool-icon"
+												aria-hidden="true"
+												alt=""
+												viewBox="0 0 128 138"
+											>
+												<path
+													d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0"
+												></path>
+											</svg>
+											<p>Figma</p>
+										</div>
+										<div class="tool" title="Copilot">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink"
+												version="1.1"
+												viewBox="0 0 165 165"
+												xml:space="preserve"
+												width="50"
+												height="50"
+											>
+												<!-- Created with SVG Stack Editor - https://svgstack.com -->
+												<defs></defs>
+												<rect
+													x="0"
+													y="0"
+													width="100%"
+													height="100%"
+													fill="transparent"
+												/>
+												<g transform="matrix(1.63 0 0 1.63 82.5 82.5)">
+													<g style="">
+														<g
+															transform="matrix(1 0 0 1 -10.52 15.1)"
+															id="path_0"
+														>
+															<path
+																style="
+																	stroke: none;
+																	stroke-width: 1;
+																	stroke-dasharray: none;
+																	stroke-linecap: butt;
+																	stroke-dashoffset: 0;
+																	stroke-linejoin: miter;
+																	stroke-miterlimit: 4;
+																	fill: rgb(0, 0, 0);
+																	fill-rule: nonzero;
+																	opacity: 1;
+																"
+																transform=" translate(-39.48, -64.73)"
+																d="M 35.4165 60.9828 C 35.4165 58.7374 37.2368 56.9171 39.4822 56.9171 C 41.7277 56.9171 43.548 58.7374 43.548 60.9828 L 43.548 68.4763 C 43.548 70.7217 41.7277 72.5421 39.4822 72.5421 C 37.2368 72.5421 35.4165 70.7217 35.4165 68.4763 L 35.4165 60.9828 Z"
+																stroke-linecap="round"
+															/>
+														</g>
+														<g
+															transform="matrix(1 0 0 1 10.32 15.1)"
+															id="path_1"
+														>
+															<path
+																style="
+																	stroke: none;
+																	stroke-width: 1;
+																	stroke-dasharray: none;
+																	stroke-linecap: butt;
+																	stroke-dashoffset: 0;
+																	stroke-linejoin: miter;
+																	stroke-miterlimit: 4;
+																	fill: rgb(0, 0, 0);
+																	fill-rule: nonzero;
+																	opacity: 1;
+																"
+																transform=" translate(-60.32, -64.73)"
+																d="M 60.3157 56.9171 C 58.0703 56.9171 56.25 58.7374 56.25 60.9828 L 56.25 68.4763 C 56.25 70.7217 58.0703 72.5421 60.3157 72.5421 C 62.5612 72.5421 64.3815 70.7217 64.3815 68.4763 L 64.3815 60.9828 C 64.3815 58.7374 62.5612 56.9171 60.3157 56.9171 Z"
+																stroke-linecap="round"
+															/>
+														</g>
+														<g transform="matrix(1 0 0 1 0 0)" id="path_2">
+															<path
+																style="
+																	stroke: none;
+																	stroke-width: 1;
+																	stroke-dasharray: none;
+																	stroke-linecap: butt;
+																	stroke-dashoffset: 0;
+																	stroke-linejoin: miter;
+																	stroke-miterlimit: 4;
+																	fill: rgb(0, 0, 0);
+																	fill-rule: evenodd;
+																	opacity: 1;
+																"
+																transform=" translate(-50, -49.63)"
+																d="M 100 68.3317 L 100 57.1255 C 100 55.6505 99.5312 54.2317 98.6562 53.0442 L 95.6125 48.9192 C 93.9831 46.6994 91.5695 46.1255 88.9813 46.1255 C 88.0063 35.0005 85.6938 27.063 80.1875 21.2505 C 69.6875 10.1255 55.75 9.00049 50 9.00049 C 44.25 9.00049 30.3125 10.1255 19.8125 21.2505 C 14.3 27.063 11.9938 35.0005 11.0188 46.1255 C 8.43567 46.1255 6.0114 46.7094 4.38126 48.9192 L 1.33751 53.038 C 0.468762 54.2255 0 55.6505 0 57.1255 L 0 68.3317 C 0.00282292 69.7787 0.720054 71.1893 1.88751 72.0442 C 11.6445 79.2062 30.8337 90.2505 50 90.2505 C 67.3241 90.2505 84.3302 82.1341 98.1125 72.0442 C 99.28 71.1893 99.9969 69.7787 100 68.3317 Z M 76.5625 47.7692 C 78.7188 48.4778 80.7915 49.4793 80.925 52.0317 L 80.9188 52.0317 C 81.2617 59.2193 81.3615 66.4433 81.2375 73.638 C 81.2278 75.0359 80.3852 76.3345 79.1125 76.913 C 68.775 81.6255 58.9938 84.0005 50.0063 84.0005 C 41.0063 84.0005 31.225 81.6255 20.8813 76.913 C 19.6085 76.3345 18.7656 75.0359 18.7563 73.638 C 18.7915 71.3115 18.8015 68.9863 18.8115 66.6617 L 18.8126 66.4161 C 18.8325 61.6213 18.8524 56.8288 19.0813 52.0317 C 19.2179 49.4939 21.2819 48.4755 23.4313 47.7692 C 25.7033 49.2019 28.4867 49.7567 31.1438 49.7567 C 33.9688 49.7567 39.2438 49.0817 43.6188 44.7067 C 44.725 43.6067 45.4813 41.8817 45.9938 39.9692 C 47.45 39.8255 48.8188 39.7567 50.0063 39.7567 C 51.3422 39.7632 52.6771 39.834 54.0063 39.9692 C 54.5188 41.8817 55.275 43.6067 56.3813 44.7067 C 60.7625 49.0817 66.0312 49.7567 68.8563 49.7567 C 71.5127 49.7567 74.2888 49.1957 76.5625 47.7692 Z M 29.3125 44.813 C 25.875 44.813 22.6875 43.688 21 42.0005 C 18.6875 39.6255 17.8125 28.3755 21.875 23.938 C 23.75 21.938 27.4375 20.5005 31.8125 20.063 C 35.9375 19.688 39.625 20.313 41.25 21.7505 C 42.75 23.0005 43.75 25.938 43.875 29.5005 C 44 33.938 42.875 38.313 41.0625 40.063 C 36.9375 44.2505 31.9375 44.813 29.3125 44.813 Z M 46.75 33.313 C 46.6875 32.5005 46.625 31.7505 46.5 31.063 C 47.8125 30.938 49 30.8755 50 30.8755 C 51 30.8755 52.1875 30.938 53.5 31.063 C 53.375 31.7505 53.3125 32.5006 53.25 33.3131 C 53.25 33.8756 53.25 34.438 53.3125 35.063 C 52.0625 34.938 50.9999 34.938 50 34.938 C 49 34.938 47.9375 34.938 46.6875 35.063 C 46.75 34.438 46.75 33.8755 46.75 33.313 Z M 58.9375 40.063 C 57.125 38.313 56 33.938 56.125 29.5005 C 56.25 25.938 57.25 23.0005 58.75 21.7505 C 60.375 20.313 64.0625 19.688 68.1875 20.063 C 72.5625 20.5005 76.25 21.938 78.125 23.938 C 82.1875 28.3755 81.3125 39.6255 79 42.0005 C 77.3125 43.688 74.125 44.813 70.6875 44.813 C 68.0625 44.813 63.0625 44.2505 58.9375 40.063 Z"
+																stroke-linecap="round"
+															/>
+														</g>
+													</g>
+												</g>
+												<g transform="matrix(1.63 0 0 1.63 82.5 82.5)">
+													<g style="">
+														<g
+															transform="matrix(1 0 0 1 -10.52 15.1)"
+															id="path_0"
+														>
+															<path
+																style="
+																	stroke: none;
+																	stroke-width: 1;
+																	stroke-dasharray: none;
+																	stroke-linecap: butt;
+																	stroke-dashoffset: 0;
+																	stroke-linejoin: miter;
+																	stroke-miterlimit: 4;
+																	fill: #73306b;
+																	fill-rule: nonzero;
+																	opacity: 1;
+																"
+																transform=" translate(-39.48, -64.73)"
+																d="M 35.4165 60.9828 C 35.4165 58.7374 37.2368 56.9171 39.4822 56.9171 C 41.7277 56.9171 43.548 58.7374 43.548 60.9828 L 43.548 68.4763 C 43.548 70.7217 41.7277 72.5421 39.4822 72.5421 C 37.2368 72.5421 35.4165 70.7217 35.4165 68.4763 L 35.4165 60.9828 Z"
+																stroke-linecap="round"
+															/>
+														</g>
+														<g
+															transform="matrix(1 0 0 1 10.32 15.1)"
+															id="path_1"
+														>
+															<path
+																style="
+																	stroke: none;
+																	stroke-width: 1;
+																	stroke-dasharray: none;
+																	stroke-linecap: butt;
+																	stroke-dashoffset: 0;
+																	stroke-linejoin: miter;
+																	stroke-miterlimit: 4;
+																	fill: #73306b;
+																	fill-rule: nonzero;
+																	opacity: 1;
+																"
+																transform=" translate(-60.32, -64.73)"
+																d="M 60.3157 56.9171 C 58.0703 56.9171 56.25 58.7374 56.25 60.9828 L 56.25 68.4763 C 56.25 70.7217 58.0703 72.5421 60.3157 72.5421 C 62.5612 72.5421 64.3815 70.7217 64.3815 68.4763 L 64.3815 60.9828 C 64.3815 58.7374 62.5612 56.9171 60.3157 56.9171 Z"
+																stroke-linecap="round"
+															/>
+														</g>
+														<g transform="matrix(1 0 0 1 0 0)" id="path_2">
+															<path
+																style="
+																	stroke: none;
+																	stroke-width: 1;
+																	stroke-dasharray: none;
+																	stroke-linecap: butt;
+																	stroke-dashoffset: 0;
+																	stroke-linejoin: miter;
+																	stroke-miterlimit: 4;
+																	fill: #73306b;
+																	fill-rule: evenodd;
+																	opacity: 1;
+																"
+																transform=" translate(-50, -49.63)"
+																d="M 100 68.3317 L 100 57.1255 C 100 55.6505 99.5312 54.2317 98.6562 53.0442 L 95.6125 48.9192 C 93.9831 46.6994 91.5695 46.1255 88.9813 46.1255 C 88.0063 35.0005 85.6938 27.063 80.1875 21.2505 C 69.6875 10.1255 55.75 9.00049 50 9.00049 C 44.25 9.00049 30.3125 10.1255 19.8125 21.2505 C 14.3 27.063 11.9938 35.0005 11.0188 46.1255 C 8.43567 46.1255 6.0114 46.7094 4.38126 48.9192 L 1.33751 53.038 C 0.468762 54.2255 0 55.6505 0 57.1255 L 0 68.3317 C 0.00282292 69.7787 0.720054 71.1893 1.88751 72.0442 C 11.6445 79.2062 30.8337 90.2505 50 90.2505 C 67.3241 90.2505 84.3302 82.1341 98.1125 72.0442 C 99.28 71.1893 99.9969 69.7787 100 68.3317 Z M 76.5625 47.7692 C 78.7188 48.4778 80.7915 49.4793 80.925 52.0317 L 80.9188 52.0317 C 81.2617 59.2193 81.3615 66.4433 81.2375 73.638 C 81.2278 75.0359 80.3852 76.3345 79.1125 76.913 C 68.775 81.6255 58.9938 84.0005 50.0063 84.0005 C 41.0063 84.0005 31.225 81.6255 20.8813 76.913 C 19.6085 76.3345 18.7656 75.0359 18.7563 73.638 C 18.7915 71.3115 18.8015 68.9863 18.8115 66.6617 L 18.8126 66.4161 C 18.8325 61.6213 18.8524 56.8288 19.0813 52.0317 C 19.2179 49.4939 21.2819 48.4755 23.4313 47.7692 C 25.7033 49.2019 28.4867 49.7567 31.1438 49.7567 C 33.9688 49.7567 39.2438 49.0817 43.6188 44.7067 C 44.725 43.6067 45.4813 41.8817 45.9938 39.9692 C 47.45 39.8255 48.8188 39.7567 50.0063 39.7567 C 51.3422 39.7632 52.6771 39.834 54.0063 39.9692 C 54.5188 41.8817 55.275 43.6067 56.3813 44.7067 C 60.7625 49.0817 66.0312 49.7567 68.8563 49.7567 C 71.5127 49.7567 74.2888 49.1957 76.5625 47.7692 Z M 29.3125 44.813 C 25.875 44.813 22.6875 43.688 21 42.0005 C 18.6875 39.6255 17.8125 28.3755 21.875 23.938 C 23.75 21.938 27.4375 20.5005 31.8125 20.063 C 35.9375 19.688 39.625 20.313 41.25 21.7505 C 42.75 23.0005 43.75 25.938 43.875 29.5005 C 44 33.938 42.875 38.313 41.0625 40.063 C 36.9375 44.2505 31.9375 44.813 29.3125 44.813 Z M 46.75 33.313 C 46.6875 32.5005 46.625 31.7505 46.5 31.063 C 47.8125 30.938 49 30.8755 50 30.8755 C 51 30.8755 52.1875 30.938 53.5 31.063 C 53.375 31.7505 53.3125 32.5006 53.25 33.3131 C 53.25 33.8756 53.25 34.438 53.3125 35.063 C 52.0625 34.938 50.9999 34.938 50 34.938 C 49 34.938 47.9375 34.938 46.6875 35.063 C 46.75 34.438 46.75 33.8755 46.75 33.313 Z M 58.9375 40.063 C 57.125 38.313 56 33.938 56.125 29.5005 C 56.25 25.938 57.25 23.0005 58.75 21.7505 C 60.375 20.313 64.0625 19.688 68.1875 20.063 C 72.5625 20.5005 76.25 21.938 78.125 23.938 C 82.1875 28.3755 81.3125 39.6255 79 42.0005 C 77.3125 43.688 74.125 44.813 70.6875 44.813 C 68.0625 44.813 63.0625 44.2505 58.9375 40.063 Z"
+																stroke-linecap="round"
+															/>
+														</g>
+													</g>
+												</g>
+											</svg>
+											<p>Copilot</p>
+										</div>
+										<div class="tool" title="Trello">
+											<svg viewBox="0 0 128 128" class="tool-icon" alt="">
+												<path
+													d="M12.5 0C5.575 0 0 5.575 0 12.5v103c0 6.925 5.575 12.5 12.5 12.5h103c6.925 0 12.5-5.575 12.5-12.5v-103C128 5.575 122.425 0 115.5 0Zm10.14 16.64h27.04c3.324 0 6 2.677 6 6v76c0 3.325-2.676 6-6 6H22.64c-3.323 0-6-2.675-6-6v-76c0-3.323 2.677-6 6-6zm55.68 0h27.04c3.323 0 6 2.677 6 6v44c0 3.325-2.677 6-6 6H78.32c-3.324 0-6-2.675-6-6v-44c0-3.323 2.676-6 6-6z"
+												></path>
+											</svg>
+											<p>Trello</p>
+										</div>
+										<div class="tool" title="Swiper">
+											<svg viewBox="0 0 128 128" class="tool-icon" alt="">
+												<path
+													d="M97.922 10.346c18.251 11.274 30.413 31.461 30.413 54.489 0 35.346-28.654 64-64 64a63.823 63.823 0 0 1-21.94-3.862l-.73-.272 1.19-.383 1.53-.501.755-.253.748-.252 1.476-.509 1.449-.512 1.421-.515 1.395-.518.688-.261 1.354-.524c1.43-.56 2.815-1.127 4.153-1.699l.995-.431 1.22-.541a119.19 119.19 0 0 0 1.583-.728l.774-.366 1.139-.553.559-.277.552-.279 1.085-.56c9.106-4.776 15.292-9.965 18.577-15.654 6.96-12.054.881-24.935-16.567-38.067l-1.42-1.064-.862-.662-.837-.656-.813-.652-.787-.646-.384-.321-.379-.32-.738-.637-.537-.474-.523-.472-.676-.624-.652-.62-.628-.614-.304-.305-.299-.305-.579-.605c-6.897-7.332-8.437-13.608-5.306-19.032 1.594-2.76 4.357-5.474 8.284-8.117l.477-.317.751-.483c.34-.214.687-.428 1.042-.642l.538-.32.83-.478.855-.476.659-.356.673-.355.921-.472a87.46 87.46 0 0 1 2.167-1.055l.752-.35 1.025-.464.522-.232 1.064-.46.542-.23 1.104-.459.56-.228 1.143-.455.581-.227 1.182-.452 1.207-.45.613-.223 1.247-.447 1.272-.444 1.299-.441.659-.22 1.337-.438 1.364-.436 1.389-.433 1.415-.431 1.442-.428 1.838-.532 1.879-.528 2.308-.628zM64.335.835c7.783 0 15.242 1.39 22.141 3.933l.737.277-.467.142-2.28.703-.746.236-1.473.474-1.446.479-1.419.482-1.392.486-1.365.49-.673.246-1.652.62-1.61.627-1.259.505-.619.254-1.218.512C57.147 16.605 48.99 22.553 45.09 29.309c-6.809 11.793-.633 24.506 16.816 37.634l1.42 1.065.862.662.837.657.41.327.799.65.582.484.57.482.736.639.36.317.699.631c.381.35.751.698 1.11 1.043l.53.516.763.77.725.761c6.867 7.383 8.335 13.785 5.072 19.438-2.112 3.658-6.144 7.258-12.086 10.753l-.546.318-.884.501-.91.499a86.31 86.31 0 0 1-1.576.829l-.815.412-1.003.494-1.029.492-1.055.491-.537.245-1.095.487-1.12.487-1.147.484-.584.242-1.186.481-.603.24-.61.24-1.239.478-1.265.476-1.291.474-1.318.472-1.343.47-.682.234-1.383.467-.702.232-1.422.464-1.449.461-1.847.574-1.889.571-1.54.453-2.15.619C12.643 108.29.336 88 .336 64.835c0-35.346 28.654-64 64-64Z"
+												></path>
+											</svg>
+											<p>Swiper</p>
+										</div>
+										<div class="tool" title="TailwindCSS">
+											<svg viewBox="0 0 128 128" class="tool-icon" alt="">
+												<path
+													d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+												></path>
+											</svg>
+											<p>TailwindCSS</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="mywork" class="padding-block-lrg">
+				<h2 class="fs-secondary-heading fw-bold container">Moje práce</h2>
+				<p class="overview container">
+					Níže najdete moji práci na reálných projektech, ale i ukázku mých
+					schopností na vlastních projektech.
+				</p>
+				<div class="overview container">
+					<div class="overview-card">
+						<div class="card-desc">
+							<h3 class="fs-600 fw-bold">Pracovní zkušenosti</h3>
+							<p style="margin-bottom: 16px">
+								Již <strong>2 roky</strong> pracuji jako Front-end developer.
+								Náplň mojí práce je vývoj webů, především:
+							</p>
+							<ul>
+								<li>
+									20 e-shopů na platformě Shoptet v HTML, CSS a Javascript
+									(překlopení grafického návrhu ve Figmě do kódu + nastavení v
+									administraci Shoptetu)
+								</li>
+								<li>pár webů na Wordpressu (úprava PHP šablony)</li>
+								<li>projekt ve Vue.js/Nuxt</li>
+							</ul>
+						</div>
+					</div>
+					<div class="overview-card">
+						<div class="card-desc">
+							<h3 class="fs-600 fw-bold">Sluneční soustava - kvíz</h3>
+							<p>
+								Prohlédněte si naši krásnou sluneční soustavu a ověřte své
+								znalosti pomocí kvízu! Vytvořeno pomocí React, TypeScript, API a
+								SCSS.
+							</p>
+							<div class="buttons">
+								<a
+									class="button btn-secondary"
+									href="https://www.zuzana-n.cz/solar-system/"
+									target="_blank"
+									>Vyzkoušet</a
+								>
+								<a
+									class="button btn-secondary"
+									href="https://github.com/Zuzana-N/solar-system"
+									target="_blank"
+									>Kód na GitHubu</a
+								>
+							</div>
+						</div>
+						<div class="img-card">
+							<img
+								src="/images/solar system.webp"
+								alt="Náhled na stránku Solar system se zobrazením planet obíhajících slunce."
+							/>
+						</div>
+					</div>
+					<div class="overview-card">
+						<div class="card-desc">
+							<h3 class="fs-600 fw-bold">
+								Časovač - součást online kurzu Front End Development Libraries
+							</h3>
+							<p>
+								Časovač, který vám například umožní využít pomodoro metodu. V
+								políčku Session Length vyberte počet minut, jak dlouho chcete
+								pracovat, v Break Length jak dlouhá má být přestávka. Vytvořeno
+								pomocí React a SCSS.
+							</p>
+							<div class="buttons">
+								<a
+									class="button btn-secondary"
+									href="https://www.zuzana-n.cz/FCC-timer/"
+									target="_blank"
+									>Vyzkoušet</a
+								>
+								<a
+									class="button btn-secondary"
+									href="https://github.com/Zuzana-N/fcc_timer"
+									target="_blank"
+									>Kód na GitHubu</a
+								>
+							</div>
+						</div>
+						<div class="img-card">
+							<img
+								src="/images/timer.webp"
+								alt="Náhled na aplikaci časovače."
+							/>
+						</div>
+					</div>
+					<div class="overview-card">
+						<div class="card-desc">
+							<h3 class="fs-600 fw-bold">Hra kámen, nůžky, papír</h3>
+							<p>
+								Moje verze oblíbené hry, postavená v Reactu a pomocí SCSS.
+								Zvolte jednu ze třech klasických možností a uvidíte, jestli
+								zvítězíte. V horní části stránky můžete sledovat, jak si vedete.
+							</p>
+							<div class="buttons">
+								<a
+									class="button btn-secondary"
+									href="https://www.zuzana-n.cz/rps/"
+									target="_blank"
+									>Vyzkoušet</a
+								>
+								<a
+									class="button btn-secondary"
+									href="https://github.com/Zuzana-N/RPS-game"
+									target="_blank"
+									>Kód na GitHubu</a
+								>
+							</div>
+						</div>
+						<div class="img-card">
+							<img
+								src="/images/rps.webp"
+								alt="Náhled na hru kámen nůžky papír"
+							/>
+						</div>
+					</div>
+					<div class="overview-card">
+						<div class="card-desc">
+							<h3 class="fs-600 fw-bold">Propočet ceny platební brány</h3>
+							<p>
+								Tuto kalkulačku jsem vytvořila, aby pomohla e-shopařům a dalším
+								podnikatelům pochopit, kolik je bude stát platební brána nebo
+								terminál. Můžou si tam porovnat nabídky od několika
+								poskytovatelů najednou. Je vytvořena pomocí HTML, CSS a
+								JavaScript (vanilla).
+							</p>
+							<div class="buttons">
+								<a
+									class="button btn-secondary"
+									href="https://www.zuzana-n.cz/kalkulacka-brany/"
+									>Vyzkoušet</a
+								>
+								<a
+									class="button btn-secondary"
+									href="https://github.com/Zuzana-N/cost-calculator"
+									target="_blank"
+									>Kód na GitHubu</a
+								>
+							</div>
+						</div>
+						<div class="img-card">
+							<img
+								src="/images/kalkulačka.webp"
+								alt="Náhled na kalkulačku platbní brány"
+							/>
+						</div>
+					</div>
+					<div class="overview-card">
+						<div class="card-desc">
+							<h3 class="fs-600 fw-bold">Úpravy na mém e-shopu decoyana.cz</h3>
+							<p>
+								E-shop běží na platformě Shoptet. Já jsem si na něm pomocí kódu
+								upravila například barvy patičky, cookies lištu, a přepsala text
+								třeba tlačítka objednávky.
+							</p>
+							<div class="buttons">
+								<a
+									class="button btn-secondary"
+									href="https://www.decoyana.cz"
+									target="_blank"
+									>Podívat se</a
+								>
+								<a
+									class="button btn-secondary"
+									href="https://www.zuzana-n.cz/upravy-eshopu/"
+									>Změny podrobně</a
+								>
+							</div>
+						</div>
+						<div class="img-card">
+							<img
+								src="/images/decoyana.webp"
+								alt="Ukázka e-shopu Decoyana s velkým úvodním carouselem."
+							/>
+						</div>
+					</div>
+					<div class="overview-card">
+						<div class="card-desc">
+							<h3 class="fs-600 fw-bold">
+								Vzhled a úprava Wordpress blogu moje-helina.cz
+							</h3>
+							<p style="margin-bottom: 0em">
+								Blog jsem upravila jak v administraci Wordpressu, tak v CSS
+								editoru a menší změny i v PHP souborech šablony. Mezi úpravy
+								patří třeba: přidání favicony, nastavení cookies lišty podle
+								současných pravidel, změna šablony a pomocí CSS úprava hlavičky
+								pro mobily a schování různých prvků. Všechny změny a obrázky
+								před a po vám ráda dodám na vyžádání.
+							</p>
+						</div>
+						<div class="img-card">
+							<img
+								src="/images/moje-helina.webp"
+								alt="Ukázka blogu moje-helina.cz"
+							/>
+						</div>
+					</div>
+					<div class="overview-card">
+						<div class="card-desc">
+							<h3 class="fs-600 fw-bold">Tato portfolio stránka</h3>
+							<p>
+								Tuto stránku jsem vytvořila za použití pouze HTML5, CSS3 a
+								JavaScriptu (vanilla). Není postavena na žádném redakčním
+								systému. Pokud máte nastavený výchozí tmavý režim, měla by se
+								vám zobrazit s opačnými barvami - černá na pozadí, bílé písmo.
+							</p>
+							<div class="buttons">
+								<a
+									class="button btn-secondary"
+									href="https://github.com/Zuzana-N/portfolio-page"
+									target="_blank"
+									>Kód na GitHubu</a
+								>
+							</div>
+						</div>
+						<div class="img-card">
+							<img
+								src="/images/portfolio2.webp"
+								alt="Náhled na moji portfolio stránku"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="padding-block-lrg bg-prim-400 white-text">
+				<div class="contact">
+					<h2 class="fs-secondary-heading fw-bold">Kontakt</h2>
+					<p class="contact-p">
+						Máte zájem o úpravu vaší stránky, nebo hledáte člena do týmu?
+						Napište e-mail nebo zavolejte a já se vám ozvu co nejdříve zpět!
+					</p>
+					<div class="flex">
+						<div class="contact-info">
+							<a href="mailto:info@zuzana-n.cz"
+								><img
+									src="https://www.zuzana-n.cz/images/mail icon.svg"
+									alt="E-mailová adresa"
+									class="filter-light"
+									title="Napsat e-mail"
+									width="50px"
+									height="50px"
+							/></a>
+							<div class="contact-row">
+								<a title="Napsat e-mail" href="mailto:info@zuzana-n.cz"
+									>info@zuzana-n.cz</a
+								><span title="Zkopírovat e-mail"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										title="Zkopírovat"
+										class="contact-icon"
+										id="email-icon"
+										viewBox="0 0 448 512"
+									>
+										<!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+										<path
+											d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"
+										/></svg
+								></span>
+							</div>
+							<p></p>
+							<a href="tel:+420604828515"
+								><img
+									src="https://www.zuzana-n.cz/images/call icon.svg"
+									alt="Telefonní číslo"
+									class="filter-light"
+									title="Zavolat"
+									width="50px"
+									height="50px"
+							/></a>
+							<div class="contact-row">
+								<a title="Zavolat" href="tel:+420604828515">+420 604 828 515</a
+								><span title="Zkopírovat tel. číslo"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										title="Zkopírovat"
+										class="contact-icon"
+										id="phone-icon"
+										viewBox="0 0 448 512"
+									>
+										<!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+										<path
+											d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"
+										/></svg
+								></span>
+							</div>
+						</div>
+						<div class="informace-o-mne">
+							<h3 class="udaje fw-bold">Údaje</h3>
+							<p>Ing. Zuzana Náprstková</p>
+							<p>IČ: 14041022</p>
+							<p>Kladenská 409/9</p>
+							<p>Praha 6 160 00</p>
+							<p>Nejsem plátce DPH.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="padding-block-lrg">
+				<div class="container">
+					<div class="even-columns">
+						<div>
+							<h2 class="fs-secondary-heading fw-bold">O mně</h2>
+							<p>
+								Když jsem spustila svůj vlastní e-shop, znala jsem pouze základy
+								HTML a CSS a počítala jsem s tím, že se kódování vyhnu, jelikož
+								jsem využila e-commerce platformu, kde už je vše připravené. Ale
+								zjistila jsem, že ačkoli platforma nabízí solidní řešení,
+								kódování se úplně nevyhnu, už jen kvůli doplnění vizuální
+								identity značky.
+							</p>
+							<br />
+							<p>
+								Ukázalo se ale, že mě kódování a úpravy webu dost baví, tak jsem
+								se zdokonalila v HTML a CSS a začala se učit programovací jazyk
+								JavaScript, abych mohla pracovat jako front-end vývojářka, a
+								mohla tak sobě i ostatním upravovat weby, aby s nimi mohli co
+								nejlépe oslovit své návštěvníky.
+							</p>
+							<a
+								class="button btn-secondary"
+								href="https://www.linkedin.com/in/zuzana-naprstkova/"
+								target="_blank"
+								>Více o mně na mém LinkedIn profilu</a
+							>
+						</div>
+						<div class="photo-bottom">
+							<img
+								class="my-photo-lg"
+								src="/images/photo_self2.webp"
+								alt="Zuzana Náprstková usmívající se do objektivu."
+								width="400"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="bg-prim-400">
+			<div class="sm-ctr">
+				<a href="https://www.zuzana-n.cz/#home" title="Domů">
+					<div class="anim-logo">
+						<svg class="initial svg-logo logo-light">
+							<rect rx="5" ry="5" x="1" y="3" width="38" height="5" />
+							<rect
+								rx="5"
+								ry="5"
+								x="1.5"
+								y="15.5"
+								width="52.5"
+								height="5"
+								class="rotated"
+							/>
+							<rect rx="5" ry="5" x="1" y="38" width="38" height="5" />
+						</svg>
+						<svg class="transform svg-logo logo-light">
+							<rect rx="5" ry="5" x="1" y="3" width="38" height="5" />
+							<rect
+								rx="5"
+								ry="5"
+								x="1.5"
+								y="15.5"
+								width="52.5"
+								height="5"
+								class="rotated"
+							/>
+							<rect rx="5" ry="5" x="1" y="38" width="38" height="5" />
+						</svg>
+					</div>
+				</a>
+				<div>
+					<nav class="footer-nav">
+						<ul aria-label="footer" role="list">
+							<li><a href="#coumim">Co umím</a></li>
+							<li><a href="#mywork">Moje práce</a></li>
+							<li><a href="#contact">Kontakt</a></li>
+							<li><a href="#about">O mně</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>
+					Copyright <span class="copyright-year">2025</span>, Zuzana Náprstková.
+					Všechna práva vyhrazena.
+				</p>
+				<p>
+					Vaše data nesbírám. Tyto stránky využívají pouze technické cookies, ke
+					kterým nepotřebuji váš souhlas.
+				</p>
+			</div>
+		</footer>
+		<script src="index.js"></script>
+	</body>
 </html>
